@@ -9,6 +9,6 @@ type Tool struct {
 	Description string
 }
 
-func (Tool) TableName() string {
+func (t Tool) TableName() string {
 	return "tool"
 }
