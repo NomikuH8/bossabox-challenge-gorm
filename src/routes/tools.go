@@ -10,5 +10,6 @@ func ToolRoutes(g *gin.Engine) {
 	{
 		tc := controllers.NewToolsController()
 		t.GET("/", tc.GetAll)
+		t.POST("/", tc.InsertOne)
 	}
 }
